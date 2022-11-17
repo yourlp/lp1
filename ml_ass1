@@ -1,0 +1,25 @@
+
+import pandas as pd
+
+pwd
+ 
+df=pd.read_csv("Heart.csv")
+print(df)
+
+#shape
+df.shape()
+
+#finding missing
+df.isnull().sum()
+
+#finding datatype
+df.dtypes
+
+#finding zeros
+(df == 0).sum()
+
+#cross validation
+from sklearn.model_selection import train_test_split
+train,test=train_test_split(df,random_state=0,test_size=0.25)
+train.shape
+test.shape
